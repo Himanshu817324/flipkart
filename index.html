@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#2874f0" />
+    <title>Flipkart clone By Himanshu</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+      integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Flipkart Header -->
+    <header class="flipkart-header">
+      <div class="header-container">
+        <button
+          class="mobile-menu-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileNavMenu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="left-section">
+          <a href="/" class="logo-container">
+            <img
+              src="images/flipkartPlus.svg"
+              alt="Flipkart"
+              class="flipkart-logo"
+            />
+          </a>
+          <div class="search">
+            <form class="search-container">
+              <div class="searchPanel">
+                <button
+                  class="search-button"
+                  type="submit"
+                  aria-label="Search for Products, Brands and More"
+                  title="Search for Products, Brands and More"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Search Icon</title>
+                    <path
+                      d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                      stroke="#717478"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M16 16L21 21"
+                      stroke="#717478"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="inputContainer">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search for products, brands and more"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="downloadApp">
+          <img src="images/downloadApp.svg" alt="" />
+        </div>
+        <div class="right-section">
+          <div class="login">
+            <div class="holder">
+              <div class="login-btn-container">
+                <a href="" class="icon">
+                  <img src="images/user.svg" alt="" />
+                </a>
+                <button class="login-btn">Login</button>
+                <div class="login-dropdown">
+                  <div class="dropdown-header">
+                    <span>New customer?</span>
+                    <a href="">Sign Up</a>
+                  </div>
+                  <ul class="dropdown-list">
+                    <li>
+                      <a href=""
+                        ><img src="images/user.svg" alt="user" /> My Profile</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="images/orders.svg" alt="user" /> Orders</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="images/wishlist.svg" alt="user" />
+                        Wishlist</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="images/rewards.svg" alt="user" /> Rewards</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="images/gifts.svg" alt="user" /> Gift Cards</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="cta">
+              <div class="topArrow"></div>
+              <div class="ctaBox">
+                <a class="ctaText" href="">Login</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carts">
+            <div class="holder">
+              <a href="/cart" class="icon" aria-label="Shopping cart">
+                <img src="images/cart.svg" alt="Shopping cart" />
+              </a>
+              <span>Cart</span>
+            </div>
+          </div>
+
+          <div class="sell">
+            <div class="holder">
+              <a href="/seller" class="icon" aria-label="Become Seller">
+                <img src="images/seller.svg" alt="becomeSeller" />
+              </a>
+              <span>Become a Seller</span>
+            </div>
+          </div>
+
+          <div class="vDots">
+            <div class="holder more">
+              <div class="more-dropdown">
+                <span
+                  class="more-btn icon"
+                  aria-expanded="false"
+                  aria-controls="mobileMoreOptions"
+                >
+                  <img src="images/more.svg" alt="more" />
+                </span>
+                <div class="more-menu">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fas fa-bell"></i> Notification Preferences</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fas fa-question-circle"></i> 24x7 Customer
+                        Care</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fas fa-chart-line"></i> Advertise</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fas fa-download"></i> Download App</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav
+      id="mobileNavMenu"
+      class="mobile-nav-menu"
+      aria-label="Mobile Navigation"
+    >
+      <div class="mobile-nav-header">
+        <div class="mobile-user-info">
+          <i class="fas fa-user-circle"></i>
+          <div class="mobile-login-text">
+            <span>Login & Signup</span>
+          </div>
+        </div>
+        <button class="mobile-nav-close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="mobile-nav-content">
+        <ul class="mobile-nav-list">
+          <li>
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-user"></i> My Account</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-box"></i> My Orders</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-heart"></i> My Wishlist</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-shopping-cart"></i> My Cart</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-bell"></i> Notifications</a>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="submenu-toggle">
+              <i class="fas fa-tshirt"></i> Fashion
+              <i class="fas fa-chevron-right submenu-icon"></i>
+            </a>
+            <ul class="mobile-submenu">
+              <li><a href="#">Men's Top Wear</a></li>
+              <li><a href="#">Women's Top Wear</a></li>
+              <li><a href="#">Footwear</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="submenu-toggle">
+              <i class="fas fa-mobile-alt"></i> Electronics
+              <i class="fas fa-chevron-right submenu-icon"></i>
+            </a>
+            <ul class="mobile-submenu">
+              <li><a href="#">Mobiles</a></li>
+              <li><a href="#">Laptops</a></li>
+              <li><a href="#">Cameras</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/seller"><i class="fas fa-store"></i> Become a Seller</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile More Options Menu -->
+    <div id="mobileMoreOptions" class="mobile-more-options">
+      <div class="mobile-more-header">
+        <h3>More Options</h3>
+        <button class="mobile-more-close" aria-label="Close more options">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="mobile-more-list">
+        <li>
+          <a href=""><i class="fas fa-bell"></i> Notification Preferences</a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="fas fa-question-circle"></i> 24x7 Customer Care</a
+          >
+        </li>
+        <li>
+          <a href=""><i class="fas fa-chart-line"></i> Advertise</a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-download"></i> Download App</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Category Navigation -->
+    <nav class="navbar container">
+      <div class="menu">
+        <div class="menu-item">
+          <img src="images/navIcons/1.webp" alt="Grocery" />
+          <span>Grocery</span>
+        </div>
+        <div class="menu-item">
+          <img src="images/navIcons/2.webp" alt="Mobiles" />
+          <span>Mobiles</span>
+        </div>
+        <div class="menu-item">
+          <img src="images/navIcons/3.webp" alt="Fashion" />
+          <span class="after">Fashion</span>
+          <ul class="submenu">
+            <li>
+              Men's Top Wear
+              <ul class="sideSubmenu">
+                <li>T-Shirts</li>
+                <li>Casual Shirts</li>
+                <li>Formal Shirts</li>
+                <li>Sweatshirts</li>
+                <li>Jackets</li>
+                <li>Sweaters</li>
+                <li>Blazers & Coats</li>
+              </ul>
+            </li>
+
+            <li>
+              Men's Bottom Wear
+              <ul class="sideSubmenu">
+                <li>All</li>
+                <li>Men's Jeans</li>
+                <li>Men's Trousers</li>
+                <li>Men's Trackpants</li>
+                <li>Men's Shorts</li>
+                <li>Men's Cargos</li>
+                <li>Men's Threefourths</li>
+              </ul>
+            </li>
+
+            <li>
+              Women Ethnic
+              <ul class="sideSubmenu">
+                <li>Sarees</li>
+                <li>Salwar Suits</li>
+                <li>Kurtis & Kurtas</li>
+                <li>Dress Materials</li>
+                <li>Lehenga Choli</li>
+                <li>Blouses</li>
+                <li>Gowns</li>
+              </ul>
+            </li>
+
+            <li>
+              Men Footwear
+              <ul class="sideSubmenu">
+                <li>Casual Shoes</li>
+                <li>Formal Shoes</li>
+                <li>Sandals & Floaters</li>
+                <li>Flip-Flops</li>
+                <li>Loafers</li>
+                <li>Boots</li>
+              </ul>
+            </li>
+
+            <li>
+              Women Footwear
+              <ul class="sideSubmenu">
+                <li>Flats</li>
+                <li>Heels</li>
+                <li>Wedges</li>
+                <li>Slippers</li>
+                <li>Sports Shoes</li>
+              </ul>
+            </li>
+
+            <li>
+              Watches & Accessories
+              <ul class="sideSubmenu">
+                <li>Men's Watches</li>
+                <li>Women's Watches</li>
+                <li>Smart Watches</li>
+                <li>Wallets</li>
+                <li>Belts</li>
+                <li>Caps & Hats</li>
+              </ul>
+            </li>
+
+            <li>
+              Women Western
+              <ul class="sideSubmenu">
+                <li>All</li>
+                <li>Women Tops</li>
+                <li>Women Dresses</li>
+                <li>Women T-Shirts & Polo T-Shirts</li>
+                <li>Women Nighties & Night Dresses</li>
+                <li>Women Jeans</li>
+                <li>Women Trackpants</li>
+                <li>Women Sports Bra</li>
+              </ul>
+            </li>
+
+            <li>
+              Bags, Suitcases and Luggage
+              <ul class="sideSubmenu">
+                <li>Flats</li>
+                <li>Heels</li>
+                <li>Wedges</li>
+                <li>Slippers</li>
+                <li>Sports Shoes</li>
+              </ul>
+            </li>
+
+            <li>
+              Kids
+              <ul class="sideSubmenu">
+                <li>Boys Clothing</li>
+                <li>Girls Clothing</li>
+                <li>Baby Clothing</li>
+                <li>Kids Footwear</li>
+              </ul>
+            </li>
+
+            <li>
+              Essentials
+              <ul class="sideSubmenu">
+                <li>Men's Watches</li>
+                <li>Women's Watches</li>
+                <li>Smart Watches</li>
+                <li>Wallets</li>
+                <li>Belts</li>
+                <li>Caps & Hats</li>
+              </ul>
+            </li>
+
+            <li>
+              Winter Wear
+              <ul class="sideSubmenu">
+                <li>Men's Jackets</li>
+                <li>Women's Jackets</li>
+                <li>Thermals</li>
+                <li>Winter Accessories</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <img src="images/navIcons/4.webp" alt="Electronics" />
+          <span class="after">Electronics</span>
+          <ul class="submenu">
+            <li>
+              Mobiles
+              <ul class="sideSubmenu">
+                <li>Samsung</li>
+                <li>iPhone</li>
+                <li>OnePlus</li>
+                <li>Vivo</li>
+                <li>Oppo</li>
+                <li>Realme</li>
+                <li>Xiaomi</li>
+              </ul>
+            </li>
+            <li>
+              Laptops & Accessories
+              <ul class="sideSubmenu">
+                <li>Gaming Laptops</li>
+                <li>Business Laptops</li>
+                <li>Thin & Light Laptops</li>
+                <li>2-in-1 Laptops</li>
+                <li>MacBooks</li>
+                <li>Laptop Accessories</li>
+                <li>External Hard Disks</li>
+                <li>Pendrives</li>
+                <li>Memory Cards</li>
+              </ul>
+            </li>
+            <li>
+              Audio & Headphones
+              <ul class="sideSubmenu">
+                <li>Bluetooth Headphones</li>
+                <li>Wired Headphones</li>
+                <li>Wireless Earbuds</li>
+                <li>Neckbands</li>
+                <li>Speakers</li>
+                <li>Soundbars</li>
+              </ul>
+            </li>
+            <li>
+              Cameras & Accessories
+              <ul class="sideSubmenu">
+                <li>DSLR & Mirrorless Cameras</li>
+                <li>Compact Cameras</li>
+                <li>Camera Lenses</li>
+                <li>Security Cameras</li>
+                <li>Camera Accessories</li>
+              </ul>
+            </li>
+            <li>
+              Smart Wearables
+              <ul class="sideSubmenu">
+                <li>Smart Watches</li>
+                <li>Fitness Bands</li>
+                <li>VR Headsets</li>
+              </ul>
+            </li>
+            <li>
+              Tablets
+              <ul class="sideSubmenu">
+                <li>Apple iPads</li>
+                <li>Android Tablets</li>
+                <li>Windows Tablets</li>
+              </ul>
+            </li>
+            <li>
+              Computer Peripherals
+              <ul class="sideSubmenu">
+                <li>Monitors</li>
+                <li>Printers</li>
+                <li>Keyboards</li>
+                <li>Mouse</li>
+                <li>Projectors</li>
+              </ul>
+            </li>
+            <li>
+              Gaming
+              <ul class="sideSubmenu">
+                <li>Gaming Consoles</li>
+                <li>Gaming Accessories</li>
+                <li>Gaming Keyboards</li>
+                <li>Gaming Mice</li>
+                <li>Gamepads</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <img src="images/navIcons/5.webp" alt="Home" />
+          <span class="after">Home & Furniture</span>
+          <ul class="submenu">
+            <li>
+              Home Furnishings
+              <ul class="sideSubmenu">
+                <li>Bedsheets</li>
+                <li>Curtains & Accessories</li>
+                <li>Cushions & Pillows</li>
+                <li>Blankets, Quilts & Dohars</li>
+                <li>Mattress Protectors</li>
+                <li>Carpets & Rugs</li>
+                <li>Sofa Covers & Protectors</li>
+                <li>Table Covers & Runners</li>
+              </ul>
+            </li>
+            <li>
+              Furniture
+              <ul class="sideSubmenu">
+                <li>Bed Frames</li>
+                <li>Sofas & Recliners</li>
+                <li>Wardrobes</li>
+                <li>TV Units</li>
+                <li>Dining Tables & Chairs</li>
+                <li>Office Chairs</li>
+                <li>Bookshelves</li>
+                <li>Shoe Racks</li>
+              </ul>
+            </li>
+            <li>
+              Home Decor
+              <ul class="sideSubmenu">
+                <li>Wall Decor</li>
+                <li>Clocks</li>
+                <li>Showpieces & Figurines</li>
+                <li>Photo Frames</li>
+                <li>Mirrors</li>
+                <li>Artificial Plants</li>
+              </ul>
+            </li>
+            <li>
+              Kitchen & Dining
+              <ul class="sideSubmenu">
+                <li>Cookware</li>
+                <li>Kitchen Storage</li>
+                <li>Tableware & Dinnerware</li>
+                <li>Kitchen Tools</li>
+                <li>Water Bottles</li>
+                <li>Lunch Boxes</li>
+              </ul>
+            </li>
+            <li>
+              Tools & Utility
+              <ul class="sideSubmenu">
+                <li>Power Tools</li>
+                <li>Hand Tools</li>
+                <li>Home Cleaning Supplies</li>
+                <li>Bathroom Accessories</li>
+              </ul>
+            </li>
+            <li>
+              Lighting Solutions
+              <ul class="sideSubmenu">
+                <li>Bulbs</li>
+                <li>Tube Lights</li>
+                <li>LED Strip Lights</li>
+                <li>Emergency Lights</li>
+                <li>Lamps & Lanterns</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <img src="images/navIcons/6.webp" alt="Appliances" />
+          <span>Appliances</span>
+        </div>
+        <div class="menu-item">
+          <img src="images/navIcons/7.webp" alt="Travel" />
+          <span>Travel</span>
+        </div>
+        <div class="menu-item after">
+          <img src="images/navIcons/8.webp" alt="Toys" />
+          <span class="after">Beauty, Toys & More</span>
+          <ul class="submenu">
+            <li>
+              Beauty & Personal Care
+              <ul class="sideSubmenu">
+                <li>Makeup</li>
+                <li>Skincare</li>
+                <li>Haircare</li>
+                <li>Fragrances</li>
+                <li>Grooming Essentials</li>
+                <li>Oral Care</li>
+              </ul>
+            </li>
+            <li>
+              Health & Nutrition
+              <ul class="sideSubmenu">
+                <li>Protein Supplements</li>
+                <li>Vitamins & Supplements</li>
+                <li>Health Drinks</li>
+                <li>Ayurveda & Herbal</li>
+                <li>Healthcare Devices</li>
+              </ul>
+            </li>
+            <li>
+              Men's Grooming
+              <ul class="sideSubmenu">
+                <li>Shaving Essentials</li>
+                <li>Beard Care</li>
+                <li>Trimmers</li>
+                <li>Hair Styling</li>
+              </ul>
+            </li>
+            <li>
+              Food & Drinks
+              <ul class="sideSubmenu">
+                <li>Tea & Coffee</li>
+                <li>Chocolates</li>
+                <li>Snacks</li>
+                <li>Grocery Items</li>
+              </ul>
+            </li>
+            <li>
+              Toys & School Supplies
+              <ul class="sideSubmenu">
+                <li>Remote Control Toys</li>
+                <li>Soft Toys</li>
+                <li>Educational Toys</li>
+                <li>Puzzles</li>
+                <li>School Bags</li>
+                <li>Stationery</li>
+              </ul>
+            </li>
+            <li>
+              Sports & Fitness
+              <ul class="sideSubmenu">
+                <li>Cricket</li>
+                <li>Badminton</li>
+                <li>Cycling</li>
+                <li>Football</li>
+                <li>Gym Essentials</li>
+                <li>Yoga Mats</li>
+              </ul>
+            </li>
+            <li>
+              Books
+              <ul class="sideSubmenu">
+                <li>Fiction</li>
+                <li>Non-Fiction</li>
+                <li>Children's Books</li>
+                <li>Academic Books</li>
+              </ul>
+            </li>
+            <li>
+              Music
+              <ul class="sideSubmenu">
+                <li>Musical Instruments</li>
+                <li>Guitars</li>
+                <li>Keyboards</li>
+                <li>Drums & Percussion</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-item after">
+          <img src="images/navIcons/9.webp" alt="Toys" />
+          <span class="after">Two Wheelers</span>
+          <ul class="submenu">
+            <li>
+              Petrol Vehicles
+              <ul class="sideSubmenu">
+                <li>Motorcycles</li>
+                <li>Scooters</li>
+              </ul>
+            </li>
+            <li>
+              Electric Vehicles
+              <ul class="sideSubmenu">
+                <li>Electric Scooters</li>
+                <li>Electric Motorcycles</li>
+              </ul>
+            </li>
+            <li>
+              Riding Gear
+              <ul class="sideSubmenu">
+                <li>Helmets</li>
+                <li>Gloves</li>
+                <li>Riding Jackets</li>
+                <li>Knee & Elbow Guards</li>
+              </ul>
+            </li>
+            <li>
+              Vehicle Accessories
+              <ul class="sideSubmenu">
+                <li>Bike Covers</li>
+                <li>Bike Locks</li>
+                <li>Mobile Holders</li>
+                <li>Bike Lights</li>
+              </ul>
+            </li>
+            <li>
+              Spare Parts
+              <ul class="sideSubmenu">
+                <li>Brakes & Clutch</li>
+                <li>Engine Oil</li>
+                <li>Tyres & Tubes</li>
+                <li>Chain Lubricants</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="mainContainer">
+        <div class="main">
+          <section class="heroSection carousel">
+            <div class="carouselContainer">
+              <div class="carousel-item">
+                <div class="slide-image">
+                  <picture>
+                    <img
+                      loading="lazy"
+                      alt="Image"
+                      src="images/carousel/1.webp"
+                      style="
+                        width: 100%;
+                        margin: auto;
+                        display: block;
+                        object-fit: cover;
+                        opacity: 1;
+                        aspect-ratio: 211 / 35;
+                      "
+                    />
+                  </picture>
+                  <img
+                    src="images/carousel/1.webp"
+                    loading="lazy"
+                    alt="Image"
+                    style="
+                      width: 100%;
+                      margin: auto;
+                      display: block;
+                      position: absolute;
+                      inset: 0px;
+                      padding: inherit;
+                      object-fit: cover;
+                      opacity: 0;
+                      aspect-ratio: 211 / 35;
+                    "
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slide-image">
+                  <picture>
+                    <img
+                      loading="lazy"
+                      alt="Image"
+                      src="images/carousel/2.webp"
+                      style="
+                        width: 100%;
+                        margin: auto;
+                        display: block;
+                        object-fit: cover;
+                        opacity: 1;
+                        aspect-ratio: 211 / 35;
+                      "
+                    />
+                  </picture>
+                  <img
+                    src="images/carousel/2.webp"
+                    loading="lazy"
+                    alt="Image"
+                    style="
+                      width: 100%;
+                      margin: auto;
+                      display: block;
+                      position: absolute;
+                      inset: 0px;
+                      padding: inherit;
+                      object-fit: cover;
+                      opacity: 0;
+                      aspect-ratio: 211 / 35;
+                    "
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slide-image">
+                  <picture>
+                    <img
+                      loading="lazy"
+                      alt="Image"
+                      src="images/carousel/3.webp"
+                      style="
+                        width: 100%;
+                        margin: auto;
+                        display: block;
+                        object-fit: cover;
+                        opacity: 1;
+                        aspect-ratio: 211 / 35;
+                      "
+                    />
+                  </picture>
+                  <img
+                    src="images/carousel/3.webp"
+                    loading="lazy"
+                    alt="Image"
+                    style="
+                      width: 100%;
+                      margin: auto;
+                      display: block;
+                      position: absolute;
+                      inset: 0px;
+                      padding: inherit;
+                      object-fit: cover;
+                      opacity: 0;
+                      aspect-ratio: 211 / 35;
+                    "
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slide-image">
+                  <picture>
+                    <img
+                      loading="lazy"
+                      alt="Image"
+                      src="images/carousel/4.webp"
+                      style="
+                        width: 100%;
+                        margin: auto;
+                        display: block;
+                        object-fit: cover;
+                        opacity: 1;
+                        aspect-ratio: 211 / 35;
+                      "
+                    />
+                  </picture>
+                  <img
+                    src="images/carousel/4.webp"
+                    loading="lazy"
+                    alt="Image"
+                    style="
+                      width: 100%;
+                      margin: auto;
+                      display: block;
+                      position: absolute;
+                      inset: 0px;
+                      padding: inherit;
+                      object-fit: cover;
+                      opacity: 0;
+                      aspect-ratio: 211 / 35;
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="carouselDots"></div>
+          </section>
+
+          <div class="d-flex g-3">
+            <div class="productCarousel col-12 col-md-10">
+              <h2 class="title">Best of Electronics</h2>
+              <div class="carousel-container">
+                <button
+                  class="nav-button prev"
+                  onclick="scrollCarousel('electronics', -300)"
+                >
+                  &#10094;
+                </button>
+                <div class="cardCarousel" id="electronics"></div>
+                <button
+                  class="nav-button next"
+                  onclick="scrollCarousel('electronics', 300)"
+                >
+                  &#10095;
+                </button>
+              </div>
+            </div>
+            <img
+              class="col-2"
+              style="
+                margin: 0.5rem;
+                margin-right: 0;
+                height: 380px;
+                width: 210px;
+                display: block;
+                position: relative;
+                inset: 0px;
+                right: 0;
+                top: 10px;
+                padding: inherit;
+                object-fit: cover;
+                opacity: 1;
+                aspect-ratio: 28 / 43;
+              "
+              src="images/sides/1.webp"
+              loading="eager"
+              alt="Image"
+            />
+          </div>
+
+          <div class="productCarousel sectionPadding">
+            <h2 class="title">Beauty, Food, Toys & more</h2>
+            <div class="carousel-container">
+              <button
+                class="nav-button prev"
+                onclick="scrollCarousel('beauty', -300)"
+              >
+                &#10094;
+              </button>
+              <div class="cardCarousel" id="beauty"></div>
+              <button
+                class="nav-button next"
+                onclick="scrollCarousel('beauty', 300)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex g-2">
+            <section
+              class="productCard d-flex flex-column my-4 col-12 col-md-4"
+            >
+              <div class="row" id="wedding-product-container"></div>
+            </section>
+            <img
+              class="sideImg col-8"
+              style="
+                width: 100%;
+                height: 71vh;
+                margin: 23px;
+                margin-bottom: 0;
+                margin-right: 0;
+                display: block;
+                position: relative;
+                inset: 0px;
+                padding: inherit;
+                object-fit: cover;
+                aspect-ratio: 828.672 / 626.312;
+              "
+              src="images/sides/2.webp"
+              alt="Image"
+            />
+          </div>
+
+          <section class="productCard d-flex flex-column my-4">
+            <div class="row" id="extra-product-container"></div>
+            <div class="row" id="product-container"></div>
+          </section>
+
+          <div class="productCarousel">
+            <h2 class="title">Grooming, Books, Fitness & more</h2>
+            <div class="carousel-container">
+              <button
+                class="nav-button prev"
+                onclick="scrollCarousel('Books', -300)"
+              >
+                &#10094;
+              </button>
+              <div class="cardCarousel" id="Books"></div>
+              <button
+                class="nav-button next"
+                onclick="scrollCarousel('Books', 300)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+
+          <div class="productCarousel">
+            <h2 class="title">Furniture Deals</h2>
+            <div class="carousel-container">
+              <button
+                class="nav-button prev"
+                onclick="scrollCarousel('furniture', -300)"
+              >
+                &#10094;
+              </button>
+              <div class="cardCarousel" id="furniture"></div>
+              <button
+                class="nav-button next"
+                onclick="scrollCarousel('furniture', 300)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex g-2">
+            <section class="productCard d-flex flex-column my-4">
+              <div class="row" id="shivratri-product-container"></div>
+            </section>
+            <img
+              class="col-8"
+              style="
+                width: 100%;
+                height: 71vh;
+                margin: 23px;
+                margin-bottom: 0;
+                margin-right: 0;
+                display: block;
+                position: relative;
+                inset: 0px;
+                padding: inherit;
+                object-fit: cover;
+                aspect-ratio: 828.672 / 626.312;
+              "
+              src="images/sides/3.webp"
+              alt="Image"
+            />
+          </div>
+
+          <div class="productCarousel">
+            <h2 class="title">Fashion Top Deals</h2>
+            <div class="carousel-container">
+              <button
+                class="nav-button prev"
+                onclick="scrollCarousel('fashion', -300)"
+              >
+                &#10094;
+              </button>
+              <div class="cardCarousel" id="fashion"></div>
+              <button
+                class="nav-button next"
+                onclick="scrollCarousel('fashion', 300)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+
+          <div class="productCarousel">
+            <h2 class="title">Top Deals</h2>
+            <div class="carousel-container">
+              <button
+                class="nav-button prev"
+                onclick="scrollCarousel('topDeals', -300)"
+              >
+                &#10094;
+              </button>
+              <div class="cardCarousel" id="topDeals"></div>
+              <button
+                class="nav-button next"
+                onclick="scrollCarousel('topDeals', 300)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+
+          <div class="productCarousel">
+            <h2 class="title">Pick Your Styles</h2>
+            <div class="carousel-container">
+              <button
+                class="nav-button prev"
+                onclick="scrollCarousel('topStyles', -300)"
+              >
+                &#10094;
+              </button>
+              <div class="cardCarousel" id="topStyles"></div>
+              <button
+                class="nav-button next"
+                onclick="scrollCarousel('topStyles', 300)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+
+          <div class="productCarousel">
+            <h2 class="title">Top Deals On TVs & Appliances</h2>
+            <div class="carousel-container">
+              <button
+                class="nav-button prev"
+                onclick="scrollCarousel('appliances', -300)"
+              >
+                &#10094;
+              </button>
+              <div class="cardCarousel" id="appliances"></div>
+              <button
+                class="nav-button next"
+                onclick="scrollCarousel('appliances', 300)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footerContent">
+        <div class="footerTop">
+          <div class="footerSection">
+            <div class="footerHeading">ABOUT</div>
+            <a href="" class="footerLink">Contact Us</a>
+            <a href="" class="footerLink">About Us</a>
+            <a href="" class="footerLink">Careers</a>
+            <a href="" class="footerLink">Flipkart Stories</a>
+            <a href="" class="footerLink">Press</a>
+            <a href="" class="footerLink">Corporate Information</a>
+          </div>
+          <div class="footerSection">
+            <div class="footerHeading">GROUP COMPANIES</div>
+            <a href="https://www.myntra.com/" class="footerLink" target="_blank"
+              >Myntra</a
+            >
+            <a
+              href="https://www.cleartrip.com/"
+              class="footerLink"
+              target="_blank"
+              >Cleartrip</a
+            >
+            <a href="https://www.shopsy.in" class="footerLink" target="_blank"
+              >Shopsy</a
+            >
+          </div>
+          <div class="footerSection">
+            <div class="footerHeading">HELP</div>
+            <a href="" class="footerLink">Payments</a>
+            <a href="" class="footerLink">Shipping</a>
+            <a
+              href=""
+              class="footerLink"
+              aria-label="Cancellation &amp; Returns"
+              >Cancellation &amp; Returns</a
+            >
+            <a href="" class="footerLink" aria-label="FAQ">FAQ</a>
+          </div>
+          <div class="footerSection">
+            <div class="footerHeading">CONSUMER POLICY</div>
+            <a href="" class="footerLink">Cancellation &amp; Returns</a>
+            <a href="" class="footerLink">Terms Of Use</a>
+            <a href="" class="footerLink">Security</a>
+            <a href="" class="footerLink">Privacy</a>
+            <a href="" class="footerLink">Sitemap</a>
+            <a href="" class="footerLink">Grievance Redressal</a>
+            <a href="" class="footerLink">EPR Compliance</a>
+          </div>
+          <div class="footerSection wide divider">
+            <div class="footerHeading">Mail Us:</div>
+            <div class="vList">
+              <p class="footerText">Flipkart Internet Private Limited,</p>
+              <p class="footerText">Buildings Alyssa, Begonia &amp;</p>
+              <p class="footerText">Clove Embassy Tech Village,</p>
+              <p class="footerText">
+                Outer Ring Road, Devarabeesanahalli Village,
+              </p>
+              <p class="footerText">Bengaluru, 560103,</p>
+              <p class="footerText">Karnataka, India</p>
+            </div>
+            <div class="footerHeading social">Social:</div>
+            <div class="hList">
+              <div class="icon">
+                <a href="https://www.facebook.com/flipkart">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a href="https://www.twitter.com/flipkart">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a href="https://www.youtube.com/flipkart">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a href="https://www.instagram.com/flipkart">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footerSection wide">
+            <div class="footerHeading">Registered Office Address:</div>
+            <div class="vList">
+              <p class="footerText">Flipkart Internet Private Limited,</p>
+              <p class="footerText">Buildings Alyssa, Begonia &amp;</p>
+              <p class="footerText">Clove Embassy Tech Village,</p>
+              <p class="footerText">
+                Outer Ring Road, Devarabeesanahalli Village,
+              </p>
+              <p class="footerText">Bengaluru, 560103,</p>
+              <p class="footerText">Karnataka, India</p>
+              <p class="footerText">CIN : U51109KA2012PTC066107</p>
+              <p class="footerText"></p>
+              <p class="footerText">
+                Telephone: <a href="tel:044-45614700">044-45614700</a> /
+                <a href="tel:044-67415800">044-67415800</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <div class="d-flex">
+            <i
+              class="fas fa-truck"
+              style="color: #fdd835; margin-right: 8px"
+            ></i>
+            <span class="footerLink">Become a Seller</span>
+          </div>
+          <div class="d-flex">
+            <i
+              class="fas fa-chart-line"
+              style="color: #fdd835; margin-right: 8px"
+            ></i>
+            <span class="footerLink">Advertise</span>
+          </div>
+          <div class="d-flex">
+            <i
+              class="fas fa-gift"
+              style="color: #fdd835; margin-right: 8px"
+            ></i>
+            <span class="footerLink">Gift Cards</span>
+          </div>
+          <div class="d-flex">
+            <i
+              class="fa-regular fa-circle-question"
+              style="color: #fdd835; margin-right: 8px"
+            ></i>
+            <span class="footerLink">Help Center</span>
+          </div>
+          <span class="copyright">
+            © 2025
+            <span>Flipkart Clone By Himanshu Pandey</span>
+          </span>
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+            alt="Payment methods"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
